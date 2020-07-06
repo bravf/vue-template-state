@@ -1,15 +1,18 @@
 {
   "name": "vue-template-state",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/vue-template-state.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue-template-state packages/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
